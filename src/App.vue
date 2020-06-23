@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Bookstore />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Bookstore from "./components/Bookstore.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Bookstore
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  background-image: url(./assets/bgBooks.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body h1,
+h3 {
+  text-transform: uppercase;
+  color: white;
+}
+
+body p {
+  color: white;
 }
 </style>
